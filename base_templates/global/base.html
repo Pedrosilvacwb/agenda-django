@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	{% include "global/partials/_head.html" %}
+</head>
+<body>
+	{% include "global/partials/_header.html" %}
+	<main --animate-duration="0.5" class="content animate__animated  animate__fadeIn">
+		{% block content %}{% endblock content %}
+		{% include "global/partials/_pagination.html" %}
+		{% include "global/partials/_toast.html" %}
+	</main>
+
+</body>
+</html>
